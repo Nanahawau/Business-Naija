@@ -1,0 +1,13 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.navbar{
+    /*background-color: #c53a4b !important;*/
+    background-color: #3ac5b4 !important;
+}
+.categories img{
+    border-radius: 50%;
+    /*border: 3px solid #c53a4b;*/
+    margin-right: 50px;
+}
