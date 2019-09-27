@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/subtract', "BusinessController@subtract");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

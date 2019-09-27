@@ -4,10 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Achievement extends Model
 {
+    protected $guarded = [];
     //
     public function business(){
-        return $this->belongsToMany('App\Business');
+        return $this->belongsTo('App\Business');
     }
 }
