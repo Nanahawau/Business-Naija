@@ -19,9 +19,6 @@ class CreateContactsTable extends Migration
             $table->string('phone')->unique();
             $table->string('email')->unique();
             $table->string('address');
-            $table->string('city');
-            $table->integer('state');
-            $table->integer('country');
             $table->timestamps();
         });
     }

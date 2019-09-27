@@ -2,14 +2,14 @@
 namespace App\Traits;
 
 
-trait Responser{
+trait ResponserTraits {
 
-    public function success($code = 200, string $type, string $message, $data = null){
+    public function success(int $code = 200, string $type, string $message, $data = null){
         return response()->json([
-           'status' => $code,
+            'status' => $code,
            'type' => $type,
            'message' => $message,
-           'data' =>$data
+           'data' => $data
         ]);
 
     }
